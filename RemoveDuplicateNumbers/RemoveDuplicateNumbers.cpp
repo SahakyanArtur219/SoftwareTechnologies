@@ -18,8 +18,6 @@ public:
 
         return size;
     }
-
-
 };
 
 int main() {
