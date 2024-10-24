@@ -24,10 +24,27 @@ int main() {
 
     ArrayProcessor processor;
 
-    int myArray[] = { 1, 2, 2, 3, 4, 4, 5, 6, 6, 6 };
-    int expectedArray[] = { 1, 2, 3, 4, 5, 6 };
-    int myArraySize = sizeof(myArray) / sizeof(myArray[0]);
-    int expectedArraySize = sizeof(expectedArray) / sizeof(expectedArray[0]);
+    int myArray[100];
+    int expectedArray[100];
+    int n;
+    int m;
+    std::cout << "input size of array n = ";
+    std::cin >> n;
+    std::cout << "\n";
+    for (int i = 0; i < n; i++) {
+        std::cin >> myArray[i];
+    }
+
+    std::cout << "input size of expected array n = ";
+    std::cin >> m;
+    std::cout << "\n";
+    for (int i = 0; i < m; i++) {
+        std::cin >> expectedArray[i];
+    }
+
+
+    int myArraySize = n;
+    int expectedArraySize = m;
 
     int k = processor.removeDuplicates(myArray, myArraySize);
 
