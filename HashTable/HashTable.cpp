@@ -102,11 +102,11 @@ int main() {
 
 	HT.insertItem(701, "Jim");
 	HT.insertItem(809, "Jony");
-	HT.insertItem(905, "Bob");
+	HT.insertItem(805, "Bob");
 	HT.insertItem(904, "Alisa");
 	HT.insertItem(903, "Jim");
 	HT.insertItem(905, "Jim");
-	HT.insertItem(905, "Jim");
+	HT.insertItem(105, "Jim");
 
 
 	HT.printTable();
